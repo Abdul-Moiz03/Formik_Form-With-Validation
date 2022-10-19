@@ -32,6 +32,7 @@ const savedDataAPI = {
 const onSubmit = (values, formsubmitting) => {
   console.log("On Submit f", values);
   formsubmitting.setSubmitting(false);
+  formsubmitting.resetForm();
   console.log(formsubmitting);
 };
 //validation through formik
@@ -238,6 +239,7 @@ const NewYoutubeForm = () => {
                 {(error) => <div className="error">{error}</div>}
               </ErrorMessage>
             </div>
+            <button type="reset">ResetForm</button>
             <button
               type="submit"
               onClick={() => {
