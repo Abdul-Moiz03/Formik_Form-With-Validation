@@ -1,4 +1,5 @@
 import "./App.css";
+import Formm from "./components/Dynamic/Form";
 import FormikContainer from "./components/FormikContainer";
 import NewYoutubeForm from "./components/NewYoutubeForm";
 import YoutubeForm from "./components/YoutubeForm";
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       {/* <YoutubeForm /> */}
       {/* <NewYoutubeForm></NewYoutubeForm> */}
-      <FormikContainer></FormikContainer>
+      {/* <FormikContainer></FormikContainer> */}
+      <Formm></Formm>
     </div>
   );
 }
